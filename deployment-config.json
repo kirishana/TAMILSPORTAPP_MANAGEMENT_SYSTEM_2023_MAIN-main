@@ -1,0 +1,17 @@
+[
+    {
+        "name": "server-1",
+
+        "ip": "145.14.151.172",
+
+        "port": 65002,
+
+        "username": "u397796223",
+
+        "beforeHooks": "echo $GITHUB_SHA",
+
+        "afterHooks": "echo 'after hook'",
+
+        "path": "/home/u397796223/domains/sangamil.com/public_html/"
+    }
+]

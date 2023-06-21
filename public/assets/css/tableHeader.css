@@ -1,0 +1,36 @@
+.phone{
+    width:8%;
+}
+.age{
+    width:3%;
+}
+.regDate{
+    width:8%;
+}
+.actions{
+    width:10%;
+}
+.orgActions{
+    width:5%;
+}
+.org{
+    width:8%
+}
+.city{
+    width:8%
+}
+.country{
+    width:8%;
+}
+.participant{
+    width:2%;
+}
+.role{
+    width:2%;
+}
+.club{
+    width:15%;
+}
+.email{
+    width:1%;
+}

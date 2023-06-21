@@ -1,0 +1,11 @@
+/vendor/
+/test/output
+.phpunit.result.cache
+/build
+.idea
+composer.lock
+/examples/settings.yml
+*.p12
+*.pem
+*.crt
+*.key

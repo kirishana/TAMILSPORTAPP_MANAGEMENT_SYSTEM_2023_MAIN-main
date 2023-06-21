@@ -1,0 +1,2 @@
+[14-Dec-2021 10:22:37 UTC] PHP Fatal error:  Trait 'Laravel\Sanctum\HasApiTokens' not found in /home/ethalxdh/demo.sangamil.no/app/Models/User.php on line 13
+[14-Jun-2023 15:20:04 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 49005168 bytes) in phar:///usr/local/bin/composer1.phar/src/Composer/Util/RemoteFilesystem.php on line 462

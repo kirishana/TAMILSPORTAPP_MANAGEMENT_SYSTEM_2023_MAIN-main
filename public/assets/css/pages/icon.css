@@ -1,0 +1,31 @@
+
+.nav-tabs {
+    background: #418BCA;
+}
+
+.nav.nav-tabs li{
+    border-bottom:3px solid transparent;
+}
+
+/*background color for icon*/
+.clr
+{
+    background: #ebebeb;
+    margin: 15px;
+
+}
+/*margin for div*/
+.iconview
+{
+    width:35px;
+    margin: 15px;
+    text-align: center;
+}
+/*font size for material icon*/
+.size{
+    font-size:30px;
+}
+/*align input center*/
+.center{
+    margin: auto;
+}
