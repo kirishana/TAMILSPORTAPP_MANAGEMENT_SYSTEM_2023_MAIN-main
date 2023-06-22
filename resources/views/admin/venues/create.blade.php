@@ -214,7 +214,8 @@ input::-webkit-inner-spin-button {
                                                 <i class="material-icons leftsize">add_circle</i>
                                          
                                                 {{ __('venue.track_details') }}
-                                            </a>                                        
+                                            </a> <br>
+                                            <h6>( {{ __('venue.track_details_desc') }} )</h6>                                       
                                         </div>
                                                                             <span id="TDetails" style="color:red;display:none;">Please Add Track Details</span> 
 
@@ -235,7 +236,8 @@ input::-webkit-inner-spin-button {
                                             {{-- <label class="control-label" for="inputPassword4">Number Of Tracks<span style="color:red;"> <b> * </b></span> </label> --}}
                                             <a class="btn btn-success required  field" required data-toggle="tooltip" id="addServiceAssistance1"><i class="material-icons leftsize">add_circle</i>
                                                 {{ __('venue.field_details') }}
-                                            </a>                                        
+                                            </a> <br>
+                                            <h6>( {{ __('venue.field_details_desc') }} )</h6>                                       
                                         </div>
                             <span id="FDetails" style="color:red;display:none;">Please Add Field Details</span> 
                                     </div>

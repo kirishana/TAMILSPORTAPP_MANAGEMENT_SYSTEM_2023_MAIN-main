@@ -10,28 +10,28 @@
                                                     <tr>
                                                         <div class="col-md-3">
 
-                                                            <th style="text-align: center;">League</th>
+                                                            <th style="text-align: center;">{{ __('league.league') }}</th>
                                                         </div>
                                                        
                                                         <div class="col-md-3">
 
-                                                            <th style="text-align: center;">Events</th>
+                                                            <th style="text-align: center;">{{ __('sidebar.events') }}</th>
                                                         </div>
                                                         <div class="col-md-3">
 
-                                                            <th style="text-align: center;">Age Group</th>
+                                                            <th style="text-align: center;">{{ __('masterdata.age_group') }}</th>
                                                         </div>
                                                         <div class="col-md-3">
 
-                                                            <th style="text-align: center;">Gender</th>
+                                                            <th style="text-align: center;">{{ __('dashboard.gender') }}</th>
                                                         </div>
                                                         <div class="col-md-3">
 
-                                                            <th style="text-align: center;">Team</th>
+                                                            <th style="text-align: center;">{{ __('sidebar.teams') }}</th>
                                                         </div>
                                                        
                                                         <div class="col-md-3">
-                                                            <th style="text-align: center;">Actions</th>
+                                                            <th style="text-align: center;">{{ __('dashboard.actions') }}</th>
                                                         </div>
 
                                                     </tr>

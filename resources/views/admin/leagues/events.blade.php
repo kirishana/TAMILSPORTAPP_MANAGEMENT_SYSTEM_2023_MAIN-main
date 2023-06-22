@@ -25,7 +25,7 @@ Tamil Sangam
 {{-- Page content --}}
 @section('content')
 <section class="content-header">
-    <h1>Events</h1>
+    <h1>{{__('sidebar.events')}}</h1>
     <ol class="breadcrumb">
         <li>
             <a href="/admin">
@@ -45,7 +45,7 @@ Tamil Sangam
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <i class="material-icons">event</i>
-                    Event List
+                    {{__('event.event_list')}}
                    
                 </h4>
 
@@ -86,17 +86,17 @@ Tamil Sangam
 
     <thead class="thead-Dark">
         <tr>
-            <th class="sorting" data-sorting_type="asc" data-column_name="name" style="cursor: pointer"><span style="float: left;" id="name_icon"><i class="fas fa-arrows-alt-v"></i></span>EventName</th>
-            <th class="sorting" data-sorting_type="asc" data-column_name="league_id" style="cursor: pointer"><span style="float: left;" id="league_id_icon"><i class="fas fa-arrows-alt-v"></i></span>League</th>
-            <th>Venue</th>
-            <th>Event Organizer</th>
-            <th>Gender</th>
-            <th>Age Group</th>
-            <th>Date</th>
+            <th class="sorting" data-sorting_type="asc" data-column_name="name" style="cursor: pointer"><span style="float: left;" id="name_icon"><i class="fas fa-arrows-alt-v"></i></span>{{__('event.event')}}</th>
+            <th class="sorting" data-sorting_type="asc" data-column_name="league_id" style="cursor: pointer"><span style="float: left;" id="league_id_icon"><i class="fas fa-arrows-alt-v"></i></span>{{__('league.league')}}</th>
+            <th>{{__('sidebar.venue')}}</th>
+            <th>{{__('event.event_org')}}</th>
+            <th>{{__('dashboard.gender')}}</th>
+            <th>{{__('masterdata.age_group')}}</th>
+            <th>{{__('event.date')}}</th>
             @if (Auth::user()->hasAnyPermission(['editevent','deleteevent']))
-            <th>Actions</th>
+            <th>{{__('dashboard.actions')}}</th>
             @endif
-            <th>Rules</th>
+            <th>{{__('sidebar.rules')}}</th>
 
         </tr>
     </thead>

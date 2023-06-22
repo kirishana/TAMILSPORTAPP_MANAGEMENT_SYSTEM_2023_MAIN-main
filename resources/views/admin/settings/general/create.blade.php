@@ -168,8 +168,8 @@
                                                     class="form-control">
                                             </div>
                                             <div class="form-group label-floating">
-                                                <label for="textinput" class="control-label">Website Url</label>
-                                                <input id="textinput" type="text" name="url" value="{{ $general->website_url }}"
+                                                <label for="textinput" class="control-label">Website Url<span style="color:red;"> <b> *</b> (https://example.com/)</span></label>
+                                                <input required id="textinput" type="text" name="url" value="{{ $general->website_url }}"
                                                     class="form-control">
                                             </div>
 

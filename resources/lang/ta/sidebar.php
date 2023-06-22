@@ -249,6 +249,9 @@ return [
 
   //League -> Events -> All Events ->Add New
 
+  // Active Log
+  'active_log' => 'செயல்ப்பாட்டு பதிவு',
+
   
   'back'=>'Back',
   'back'=>'Back',

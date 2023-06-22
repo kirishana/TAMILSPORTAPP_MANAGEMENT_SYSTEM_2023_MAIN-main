@@ -62,7 +62,7 @@ Tamil Sangam
 @stop
 @section('content')
 <section class="content-header">
-    <h1>Events</h1>
+    <h1>{{ __('sidebar.events') }}</h1>
     <ol class="breadcrumb">
         <li>
             <a href="/admin">
@@ -82,7 +82,7 @@ Tamil Sangam
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <i class="material-icons  6:34 PM 9/24/2021">event</i>
-                    Event Cancellation
+                    {{ __('sidebar.event_cancel') }}
                 </h4>
             </div>
             <br />
@@ -158,17 +158,17 @@ Tamil Sangam
         <tr class="filters" style="text-align: center">
 <tr>
    
-    <th class="sorting" data-sorting_type="asc" data-column_name="name" style="cursor: pointer"><span style="float: left;" id="name_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; Event Name</th>
-    <th class="sorting" data-sorting_type="asc" data-column_name="league_id" style="cursor: pointer"><span style="float: left;" id="league_id_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; League Name</th>
-    <th class="sorting" data-sorting_type="asc" data-column_name="gender_id" style="cursor: pointer"><span style="float: left;" id="gender_id_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; Gender</th>
-    <th style="width:10%"  class="sorting" data-sorting_type="asc" data-column_name="age_group_id" style="cursor: pointer"><span style="float: left;" id="age_group_id_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp;  Age Group</th>
-    <th class="sorting" data-sorting_type="asc" data-column_name="date" style="cursor: pointer"><span style="float: left;" id="date_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; Date</th>
-    <th>Status</th>    
-    <th>Participants</th>
+    <th class="sorting" data-sorting_type="asc" data-column_name="name" style="cursor: pointer"><span style="float: left;" id="name_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; {{ __('event.event') }}</th>
+    <th class="sorting" data-sorting_type="asc" data-column_name="league_id" style="cursor: pointer"><span style="float: left;" id="league_id_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; {{ __('league.league') }}</th>
+    <th class="sorting" data-sorting_type="asc" data-column_name="gender_id" style="cursor: pointer"><span style="float: left;" id="gender_id_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; {{ __('dashboard.gender') }}</th>
+    <th style="width:10%"  class="sorting" data-sorting_type="asc" data-column_name="age_group_id" style="cursor: pointer"><span style="float: left;" id="age_group_id_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp;  {{ __('masterdata.age_group') }}</th>
+    <th class="sorting" data-sorting_type="asc" data-column_name="date" style="cursor: pointer"><span style="float: left;" id="date_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; {{ __('sidebar.date') }}</th>
+    <th>{{ __('sidebar.status') }}</th>    
+    <th>{{ __('sidebar.participants') }}</th>
 
     <!-- <th style="width:10%" class="sorting" data-sorting_type="asc" data-column_name="count" style="cursor: pointer"><span style="float: left;" id="count_icon"><i class="fas fa-arrows-alt-v"></i></span> &nbsp; Participants</th> -->
            @if (Auth::guard('web')->user()->can('edit-cancellation'))     
-    <th style="width:4%">Event Cancellation</th>
+    <th style="width:4%">{{ __('sidebar.event_cancel') }}</th>
     @endif
 </tr>
 <tbody id="sortUsers" class="events" style="text-transform:capitalize;">

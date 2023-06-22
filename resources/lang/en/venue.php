@@ -15,7 +15,10 @@ return [
     'longitude'=>'Longitude',
     'track'=>'Track Details',
     'field'=>'Field Details',
-    'edit_venue'=>'Edit Venue'
+    'edit_venue'=>'Edit Venue',
+    'track_details_desc'=>'Compulsary add to venue details, because it is depend on track divider in the heats method running.',
+    'field_details_desc'=>'Compulsary add to venue details, because it is pre planned to where that event will conduct the organization.',
 
+    
 ]
 ?>

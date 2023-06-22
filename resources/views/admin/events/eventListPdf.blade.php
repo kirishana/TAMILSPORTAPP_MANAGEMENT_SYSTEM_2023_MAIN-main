@@ -1,4 +1,4 @@
- ,<style type="text/css">
+ <style type="text/css">
     table {
         width: 100%;
         border-collapse: collapse;

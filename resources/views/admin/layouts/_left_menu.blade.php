@@ -878,7 +878,7 @@ z-index: 99999;
                 <li {!! (Request::is('paymentsRequest') ? 'class="active"' : '' ) !!}>
                     <a class="hover" href="/paymentsRequest">
                         <!-- <i class="material-icons">keyboard_arrow_right</i> -->
-                        <span class="title">{{ __('sidebar.paymnet_req') }}</span>
+                        <span class="title">{{ __('sidebar.payment_req') }}</span>
                     </a>
                 </li>
                
@@ -1040,7 +1040,7 @@ z-index: 99999;
      <li>
                 <a class="hover" href="{{ URL::to('/activity') }}">
                 <i class="far fa-eye"></i>
-                    <span class="title">ActivityLog</span>
+                    <span class="title">{{ __('sidebar.active_log') }}</span>
                 </a>
         </li>
            @endif

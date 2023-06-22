@@ -30,15 +30,13 @@
         <table class="table table-striped text-uppercase table-bordered"  id="users" >
                     <thead class="thead-Dark">
                         <tr  style="text-align: center">
-                            <th width="8%">Event</th>
-                            <th>Event Date</th>
-                            <th class="phone">Gender</th>
-                            <th class="age">Age Group</th>
-                            <th>Team Available 
-                    </th>
+                            <th width="8%">{{ __('event.event') }}</th>
+                            <th>{{ __('event.event_date') }}</th>
+                            <th class="phone">{{ __('dashboard.gender') }}</th>
+                            <th class="age">{{ __('masterdata.age_group') }}</th>
+                            <th>{{ __('event.team_available') }} </th>
 
-                            <th  class="age">Teams  
-                                </th>
+                            <th  class="age">{{ __('sidebar.teams') }}  </th>
                                
 <th></th>
                            

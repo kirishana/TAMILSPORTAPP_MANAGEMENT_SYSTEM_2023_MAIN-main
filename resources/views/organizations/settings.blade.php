@@ -254,8 +254,8 @@ Settings
 
                                 </div>
                                 <div class="col-md-12">
-                                  <label class="control-label" for="firstName3">{{ __('settings.footer') }} 
-                                        </label>
+                                  <h4 class="control-label" for="firstName3">{{ __('settings.footer') }} 
+</h4>
                                     <div class="bootstrap-admin-panel-content">
                                         <textarea id="ckeditor_full" name="description">{{ $org->orgsetting?$org->orgsetting->footer:'' }}</textarea>
                                     </div>
@@ -264,7 +264,11 @@ Settings
                             </div>
                             <br>
                              <div class="row">
-                          <div class="col-md-6 togglebutton">
+
+                          <div class="col-md-12 togglebutton">
+                          <hr>
+
+                            <h4>{{ __('settings.two_factor_e_d') }}</h4>
                              <label>
                                 {{ __('settings.two_factor') }}
                                  @if($org->orgsetting!=null)
@@ -275,9 +279,10 @@ Settings
                             </label>
                         </div>
                         </div>
-                    
+                    <hr>
                             <div class="row">
-                            <div class="col-md-6 togglebutton">
+                            <div class="col-md-12 togglebutton">
+                                <h4>{{ __('settings.optional_que') }}</h4>
                             <label>
                                {{ __('settings.optional_que') }}
                                 @if($org->orgsetting)
@@ -286,6 +291,8 @@ Settings
                                 <input type="checkbox" name="active" id="toggle"  class="toggle_btn optional" >
                                 @endif
                             </label>
+                            <br>
+                            <label>( {{ __('settings.optional_que_desc') }} )<label>
                         </div>
                             </div>
                             <div class="row optionalQuestions" id="optionalQuestions" style="display:none;">
@@ -315,14 +322,13 @@ Settings
                                 <label class="control-label" for="discount">{{ __('settings.discount') }}</label>
                                         <input type="text" class="form-control" name="discount" id="" value="{{$org->orgsetting?$org->orgsetting->discount:''}}">   
                                 </div>
-                               
-                           
-                             
                             </div>
+
+                            <hr>
                             <div class="col-md-12">
                                     <div class="bootstrap-admin-panel-content">
-                                    <label class="control-label" for="firstName3">{{ __('settings.terms') }}
-                                        </label>
+                                    <h4 class="control-label" for="firstName3">{{ __('settings.terms') }}
+</h4>
                                         <textarea id="ckeditor_full" name="terms">{{ $org->orgsetting?$org->orgsetting->terms_conditions:'' }}</textarea>
                                     </div>
                                     

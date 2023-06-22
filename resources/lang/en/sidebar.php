@@ -89,6 +89,7 @@ return [
 'event_organizer'=>'Event Organizer',
 
   //Players
+  'player' => 'Player',
   'players' => 'Players',
   'all_players' => 'All Players',
   'positions' => 'Positions',
@@ -255,7 +256,13 @@ return [
   //League -> Events -> All Events ->Add New
 
 
-  'back' => 'Back',
+// active Log
+  'active_log' => 'ActivityLog',
+
+
+
+
+
   'back' => 'Back',
   'back' => 'Back',
   'back' => 'Back',

@@ -26,7 +26,7 @@ Tamil Sangam
 {{-- Page content --}}
 @section('content')
 <section class="content-header">
-    <h1>Participants </h1>
+    <h1>{{ __('sidebar.participants') }} </h1>
     <ol class="breadcrumb">
         <li>
             <a href="/admin">
@@ -46,7 +46,7 @@ Tamil Sangam
             <div class="panel-heading">
                 <h4 class="panel-title">
                     <i class="material-icons  6:34 PM 9/24/2021">spa</i>
-                    Participants
+                    {{ __('sidebar.participants') }}                
                 </h4>
 
             </div>
@@ -69,7 +69,7 @@ Tamil Sangam
                 <div class="col-md-2 export-button" style="display:flex; justify-content:flex-end;">
 
                     <a href="/league/participants/export" target="_blank" title="Print Participant Number" class="btn btn-success"> 
-                    <img style="margin-top:0px" src="{{ asset('assets/images/icons/pdf.png') }}"> &nbsp;Export Participant No
+                    <img style="margin-top:0px" src="{{ asset('assets/images/icons/pdf.png') }}"> &nbsp;{{ __('event.export_no') }}
                     </a>
                 </div>
             </div>
@@ -95,8 +95,8 @@ Tamil Sangam
                     <table class="col-md-6 table table-striped table-hover table-bordered" >
                         <thead class="" style="background-color: #515763;color:white;text-transform:uppercase;">
                             <tr>
-                                <th class="sorting" data-sorting_type="asc" data-column_name="number" style="cursor: pointer"><span style="float: left;" id="number_icon"><i class="fas fa-arrows-alt-v"></i></span>Participant Number</th>
-                                <th>Participant Name</th>
+                                <th class="sorting" data-sorting_type="asc" data-column_name="number" style="cursor: pointer"><span style="float: left;" id="number_icon"><i class="fas fa-arrows-alt-v"></i></span>{{ __('event.participant_number') }}</th>
+                                <th>{{ __('event.participant_name') }}</th>
                                 <th>{{$value?$value:'Organization/Club' }}</th>
                             </tr>
                         </thead>

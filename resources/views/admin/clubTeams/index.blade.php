@@ -18,7 +18,7 @@
 <section class="content-header">
 
   <!--section starts-->
-  <h1>Group Event Registrations</h1>
+  <h1>{{ __('sidebar.group_event_regs') }}</h1>
   <ol class="breadcrumb">
     <li>
       <a href="#">
@@ -39,10 +39,10 @@
                 
                 <ul class="nav nav-tabs tabs-li" style="background-color: white;color:black;">
                     <li class="active" style="color:white">
-                        <a href="#clubTeam" data-toggle="tab" ><span style="color:black">Club Teams</span></a>
+                        <a href="#clubTeam" data-toggle="tab" ><span style="color:black">{{ __('sidebar.club_teams') }}</span></a>
                     </li>
                     <li>
-                        <a href="#reg" data-toggle="tab"><span style="color:black">Event Registration for Club</span></a>
+                        <a href="#reg" data-toggle="tab"><span style="color:black">{{ __('event.event_registation_for_club') }}</span></a>
                     </li>
                 </ul>
             <br />
@@ -50,7 +50,7 @@
                     <div id="myTabContent" class="tab-content">
                         <div class="tab-pane fade active in" id="clubTeam">
                              <div class="row">
-                                <div class="error" style="font-size:18px;">*Please Select the club first</div>
+                                <div class="error" style="font-size:18px;">* {{ __('event.please_select_the_club_first') }}</div>
 <br>
                             <div class="col-md-3">
                                 </label>
@@ -76,10 +76,10 @@
         <div class="panel panel-default">
                 <ul class="nav nav-tabs tabs-li" id="nav-tab"style="background-color: grey">
                     <li class="active" style="color:white">
-                        <a href="#futureEvents" data-toggle="tab" ><span style="color:white">Upcoming Events </span></a>
+                        <a href="#futureEvents" data-toggle="tab" ><span style="color:white">{{ __('event.upcomming_events') }} </span></a>
                     </li>
                     <li>
-                        <a href="#registeredEvents" data-toggle="tab"><span style="color:white">Registered Events</span></a>
+                        <a href="#registeredEvents" data-toggle="tab"><span style="color:white">{{ __('event.registed_events') }}</span></a>
                     </li>
                    
                 </ul>

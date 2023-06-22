@@ -36,7 +36,7 @@ class TeamsController extends Controller
         $leagues=League::where('to_date','>=',Carbon::now()->format('Y-m-d'))->get();
         $futureEvents=null;
         $leagueEvents = League::where('to_date', '>', Carbon::now())->where('from_date', '<', Carbon::now())->orwhere('from_date', '>', Carbon::now())->get();
-$users=null;
+        $users=null;
         return view('admin.clubTeams.index',compact('users','leagueEvents','clubs','club1','teams','team','clubId','leagues','futureEvents'));
     }
     public function filter($id){
